@@ -33,35 +33,9 @@ body {
     overflow: hidden; /* Ensure circles don't cause scrollbars */
 }
 
-.circle-top {
-    position: absolute;
-    width: 974px; /* Adjust size based on design */
-    height: 974px; /* Adjust size based on design */
-    background-color: hsla(185, 75%, 39%, 0.5); /* Lighter shade of cyan or transparent pattern */
-    border-radius: 50%;
-    top: -500px; /* Adjust to position correctly */
-    left: -200px; /* Adjust to position correctly */
-    transform: translate(-50%, -50%);
-    background-image: url('images/bg-pattern-top.svg'); /* Replace with your actual background pattern image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust opacity as needed to match the visual */
-}
 
-.circle-bottom {
-    position: absolute;
-    width: 974px; /* Adjust size based on design */
-    height: 974px; /* Adjust size based on design */
-    background-color: hsla(185, 75%, 39%, 0.5); /* Lighter shade of cyan or transparent pattern */
-    border-radius: 50%;
-    bottom: -500px; /* Adjust to position correctly */
-    right: -200px; /* Adjust to position correctly */
-    transform: translate(50%, 50%);
-    background-image: url('images/bg-pattern-bottom.svg'); /* Replace with your actual background pattern image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.5; /* Adjust opacity as needed to match the visual */
-}
+
+
 
 
 .profile-card {
