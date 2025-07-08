@@ -18,9 +18,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat, no-repeat:
-    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
     overflow: hidden; /* Hide overflow from the background circles */
     position: relative; /* For positioning background elements */
 }
@@ -35,6 +32,54 @@ body {
 
 
 
+/* ... (previous CSS code remains the same) ... */
+
+/* Abstract background circles */
+.background-elements {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* Ensure circles don't cause scrollbars - keep this */
+}
+
+.circle-top {
+    position: absolute;
+    width: 974px; /* Adjust size based on design, larger circles */
+    height: 974px; /* Adjust size based on design, larger circles */
+    background-color: hsla(185, 75%, 39%, 0.5); /* Lighter shade of cyan or transparent pattern */
+    border-radius: 50%;
+    /* --- ADJUSTMENTS START HERE --- */
+    top: -500px; /* Moves the center of the circle 500px up from the top edge */
+    left: -200px; /* Moves the center of the circle 200px left from the left edge */
+    /* Adjust these translate values to finely tune the position relative to top/left */
+    transform: translate(-50%, -50%); /* Keeps the center of the circle at top/left point */
+    /* --- ADJUSTMENTS END HERE --- */
+    background-image: url('images/bg-pattern-top.svg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust opacity as needed to match the visual */
+}
+
+.circle-bottom {
+    position: absolute;
+    width: 974px; /* Adjust size based on design, larger circles */
+    height: 974px; /* Adjust size based on design, larger circles */
+    background-color: hsla(185, 75%, 39%, 0.5); /* Lighter shade of cyan or transparent pattern */
+    border-radius: 50%;
+    /* --- ADJUSTMENTS START HERE --- */
+    bottom: -500px; /* Moves the center of the circle 500px down from the bottom edge */
+    right: -200px; /* Moves the center of the circle 200px right from the right edge */
+    /* Adjust these translate values to finely tune the position relative to bottom/right */
+    transform: translate(50%, 50%); /* Keeps the center of the circle at bottom/right point */
+    /* --- ADJUSTMENTS END HERE --- */
+    background-image: url('images/bg-pattern-bottom.svg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust opacity as needed to match the visual */
+}
+
+/* ... (rest of your CSS code remains the same) ... */
 
 
 
